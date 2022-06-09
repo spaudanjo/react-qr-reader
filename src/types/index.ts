@@ -5,7 +5,7 @@ export type QrReaderProps = {
   /**
    * Media track constraints object, to specify which camera and capabilities to use
    */
-  constraints?: MediaTrackConstraints;
+  constraints?: MediaTrackConstraints & { zoom?: number };
   /**
    * Called when an error occurs.
    */
@@ -59,7 +59,7 @@ export type UseQrReaderHookProps = {
   /**
    * Media constraints object, to specify which camera and capabilities to use
    */
-  constraints?: MediaTrackConstraints;
+  constraints?: MediaTrackConstraints & { zoom?: number };
   /**
    * Callback for retrieving the result
    */
